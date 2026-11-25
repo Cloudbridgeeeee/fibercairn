@@ -1,0 +1,171 @@
+{
+  "name": "FiberCairn",
+  "primary": "Request a pilot",
+  "accent": "#ff488b",
+  "ink": "#ffffff",
+  "bg": "#0d060b",
+  "surface": "#1b0e17",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400..500&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Onest\", system-ui, sans-serif",
+  "fontText": "\"Onest\", system-ui, sans-serif",
+  "client": "Lagos metro network",
+  "note": "A fixed network of 64 sites. Results here come from fixed data in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Network",
+    "records": "Incidents",
+    "queue": "Findings to review"
+  },
+  "overview": {
+    "title": "Lagos metro network, November",
+    "kpis": [
+      [
+        "Managed sites",
+        "64"
+      ],
+      [
+        "Outages",
+        "42"
+      ],
+      [
+        "Repeat sites",
+        "4"
+      ],
+      [
+        "Median restore",
+        "3.4 h"
+      ]
+    ],
+    "chart": {
+      "title": "Outages per week, last 8 weeks",
+      "labels": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8"
+      ],
+      "values": [
+        4,
+        3,
+        5,
+        6,
+        4,
+        7,
+        5,
+        8
+      ],
+      "threshold": 5,
+      "thresholdLabel": "Target 5 a week",
+      "caption": "Weeks above the line had more outages than the target."
+    }
+  },
+  "records": {
+    "title": "Incidents",
+    "searchHint": "Site or cause",
+    "statusCol": 3,
+    "columns": [
+      "Site",
+      "Cause",
+      "Customers",
+      "Status",
+      "Restore",
+      "Opened"
+    ],
+    "tones": {
+      "Recurring": "bad",
+      "Review": "warn",
+      "Closed": "good"
+    },
+    "rows": [
+      [
+        "Lekki Phase 1 cabinet",
+        "Fibre cut",
+        "312",
+        "Recurring",
+        "5.8 h",
+        "Nov 24"
+      ],
+      [
+        "Yaba POP 2",
+        "Power loss",
+        "1,480",
+        "Recurring",
+        "2.1 h",
+        "Nov 23"
+      ],
+      [
+        "Ikeja GRA node",
+        "Optic signal drop",
+        "540",
+        "Review",
+        "1.4 h",
+        "Nov 23"
+      ],
+      [
+        "Surulere cabinet 4",
+        "Equipment fault",
+        "205",
+        "Review",
+        "3.0 h",
+        "Nov 22"
+      ],
+      [
+        "Lekki Phase 1 cabinet",
+        "Fibre cut",
+        "298",
+        "Closed",
+        "5.1 h",
+        "Nov 9"
+      ],
+      [
+        "Yaba POP 2",
+        "Power loss",
+        "1,466",
+        "Closed",
+        "1.9 h",
+        "Nov 2"
+      ],
+      [
+        "Ajah cabinet 1",
+        "Fibre cut",
+        "188",
+        "Closed",
+        "4.6 h",
+        "Oct 28"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Findings waiting for an engineer",
+    "lead": "Each finding lists the tickets and work orders behind it. Nothing is closed until an engineer reviews it.",
+    "items": [
+      {
+        "id": "lk",
+        "title": "Lekki Phase 1: repeat fibre cuts",
+        "detail": "6 outages in 90 days.",
+        "reason": "All within 200 m of the Admiralty Way roadworks."
+      },
+      {
+        "id": "yb",
+        "title": "Yaba POP 2: night power loss",
+        "detail": "4 outages since September.",
+        "reason": "Each began within 20 minutes of grid loss; battery from 2023."
+      },
+      {
+        "id": "ik",
+        "title": "Ikeja GRA: optic signal drops",
+        "detail": "3 drops in 30 days.",
+        "reason": "Complaints about slow speed rise on the same days."
+      },
+      {
+        "id": "su",
+        "title": "Surulere cabinet 4: slow restoration",
+        "detail": "Restore took 3.0 h against 1.5 h median.",
+        "reason": "Spare parts held at Ikeja, 22 km away."
+      }
+    ]
+  }
+}

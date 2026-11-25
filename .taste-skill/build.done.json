@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "dir": "/home/user/fibercairn",
+ "kind": "software",
+ "start": "2026-11-25T08:00:24.110Z",
+ "by": "start.mjs",
+ "url": null,
+ "root": "dist",
+ "category": "network reliability software",
+ "primary": "Request a pilot"
+}

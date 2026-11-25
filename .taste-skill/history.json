@@ -1,0 +1,20 @@
+{
+ "palettes": [
+  "plum-black-pink"
+ ],
+ "types": [
+  "onest"
+ ],
+ "dealt": [
+  "onest",
+  "geist",
+  "chivo"
+ ],
+ "moments": [
+  {
+   "id": "liquid-type",
+   "at": "2026-11-25T08:00:24.239Z",
+   "seed": "50340174"
+  }
+ ]
+}
